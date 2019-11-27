@@ -6,12 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Principal extends AppCompatActivity {
+public class Categorias extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_prinicpal);
+        setContentView(R.layout.activity_categorias);
     }
 
     //Metodo para aretes

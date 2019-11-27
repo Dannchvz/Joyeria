@@ -24,7 +24,7 @@ public class IniciodeSesion extends AppCompatActivity {
     }
 
    public void Entrar(View view){
-        Intent IrPago = new Intent(this,Principal.class);
+        Intent IrPago = new Intent(this, Categorias.class);
         startActivity(IrPago);
     }
 }

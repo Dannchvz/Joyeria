@@ -17,15 +17,16 @@
             android:layout_width="match_parent"
             android:layout_height="15dp"
             android:orientation="vertical">
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/B9"
                 android:layout_marginStart="288dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginTop="0dp"
-                app:layout_constraintStart_toStartOf="@id/scrollView"
-                />
+                android:onClick="Atras"
+                android:text="@string/B9"
+                app:layout_constraintStart_toStartOf="@id/scrollView" />
 
         </LinearLayout>
 
