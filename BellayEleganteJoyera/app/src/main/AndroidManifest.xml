@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".Pago"
             android:label="@string/app_comf"
             android:roundIcon="@mipmap/ic_launcher_round"
@@ -57,6 +58,19 @@
             android:label="@string/InfCollares"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"/>
+=======
+        <activity android:name=".Prueba"></activity>
+        <activity android:name=".Pago" />
+        <activity android:name=".TarjetaDebito" />
+        <activity android:name=".Direccion" />
+        <activity android:name=".Registro" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".cuenta" />
+        <activity android:name=".Pulseras" />
+        <activity android:name=".Aretes" />
+        <activity android:name=".Cadenas" />
+        <activity android:name=".Collares" />
+>>>>>>> 05e18f550b83a397fa4b5516604a565a8a4e80af
         <activity android:name=".Logo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
