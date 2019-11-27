@@ -61,15 +61,16 @@ package="com.example.bellayelegantejoyera">
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true" />
     <activity
-        android:name=".Collares"
-        android:label="@string/InfCollares"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true" />
-    <activity
         android:name=".Categorias"
         android:label="@string/InfCategorias"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true" />
+    <activity
+        android:name=".Collares"
+        android:label="@string/InfCollares"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" />
+
 
     =======
     <activity android:name=".Prueba"></activity>

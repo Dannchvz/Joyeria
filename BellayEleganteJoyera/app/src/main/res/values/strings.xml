@@ -11,6 +11,11 @@
     <string name="B9">Atras</string>
     <string name="B10">Atras</string>
     <string name="B11">Atras</string>
+    <string name="B12">Aretes</string>
+    <string name="B13">Collares</string>
+    <string name="B14">Anillos</string>
+    <string name="B15">Pulseras</string>
+    <string name="B16">Cadenas</string>
     <string name="InfoTarjeta">Información de tarjeta</string>
     <string name="NumTarjeta">Numero de Tarjeta</string>
     <string name="Nombre">Nombre</string>
@@ -38,10 +43,6 @@
     <string name="InfAnillos">Anillos</string>
     <string name="InfUsuario">Información de Usuario</string>
     <string name="IniSesioin">Inicio de Sesion</string>
-    <string name="B12">Aretes</string>
-    <string name="B13">Collares</string>
-    <string name="B14">Anillos</string>
-    <string name="B15">Pulseras</string>
     <string name="InfCategorias">Categorías</string>
 
 </resources>

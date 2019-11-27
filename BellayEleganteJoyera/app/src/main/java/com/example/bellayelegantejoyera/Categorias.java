@@ -25,6 +25,12 @@ public class Categorias extends AppCompatActivity {
         startActivity(Collares);
     }
 
+    //Metodo para Cadenas
+    public void Cadenas(View view){
+        Intent cadenas = new Intent(this,Cadenas.class);
+        startActivity(cadenas);
+    }
+
     //Metodo para Anillos
     public void Anillos(View view){
         Intent Anillos = new Intent(this,Anillos.class);
@@ -34,5 +40,10 @@ public class Categorias extends AppCompatActivity {
     public void Pulseras(View view){
         Intent Pulseras = new Intent(this,Pulseras.class);
         startActivity(Pulseras);
+    }
+    //Metodo para Atras
+    public void Atras(View view){
+        Intent Atras = new Intent(this, IniciodeSesion.class);
+        startActivity(Atras);
     }
 }

@@ -13,9 +13,9 @@ public class Collares extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collares);
     }
-    //Metodo para atras
+    //Metodo para Atras
     public void Atras(View view){
-        Intent Atras = new Intent(this, IniciodeSesion.class);
+        Intent Atras = new Intent(this, Categorias.class);
         startActivity(Atras);
     }
 }
