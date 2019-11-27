@@ -74,7 +74,8 @@ package="com.example.bellayelegantejoyera">
     =======
     <activity android:name=".Prueba"></activity>
     >>>>>>> 05e18f550b83a397fa4b5516604a565a8a4e80af
-    <activity android:name=".Logo">
+    <activity android:name=".Logo"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
