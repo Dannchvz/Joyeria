@@ -17,7 +17,7 @@ public class Aretes extends AppCompatActivity {
     //Metodo para ir hacia atras
 
     public void Atras(View view) {
-        Intent Atras =new Intent(this, MainActivity.class);
+        Intent Atras =new Intent(this, IniciodeSesion.class);
         startActivity(Atras);
 
     }

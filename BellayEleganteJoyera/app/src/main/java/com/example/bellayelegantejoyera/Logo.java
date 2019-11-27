@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
 
 public class Logo extends AppCompatActivity {
 
@@ -21,7 +20,7 @@ public class Logo extends AppCompatActivity {
         Handler.postDelayed(new Runnable() {
             public void run() {
                 //Metodo Para ir a Registro
-                Intent IrInicio = new Intent(Logo.this, MainActivity.class);
+                Intent IrInicio = new Intent(Logo.this, IniciodeSesion.class);
                 startActivity(IrInicio);
                 finish();
             };

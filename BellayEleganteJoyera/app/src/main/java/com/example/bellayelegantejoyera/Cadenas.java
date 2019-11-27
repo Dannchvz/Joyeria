@@ -15,7 +15,7 @@ public class Cadenas extends AppCompatActivity {
     }
     //Metodo para Atras
     public void Atras(View view){
-        Intent Atras = new Intent(this,MainActivity.class);
+        Intent Atras = new Intent(this, IniciodeSesion.class);
         startActivity(Atras);
     }
 }

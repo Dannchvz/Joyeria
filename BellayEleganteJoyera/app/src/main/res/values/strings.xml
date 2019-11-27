@@ -6,7 +6,11 @@
     <string name="B4">Finalizar Registro</string>
     <string name="B5">Guardar</string>
     <string name="B6">Finalizar compra</string>
-    <string name="titulo">Información de tarjeta</string>
+    <string name="B7">Atras</string>
+    <string name="B8">Atras</string>
+    <string name="B9">Atras</string>
+    <string name="B10">Atras</string>
+    <string name="InfoTarjeta">Información de tarjeta</string>
     <string name="NumTarjeta">Numero de Tarjeta</string>
     <string name="Nombre">Nombre</string>
     <string name="Mes">Mes</string>
@@ -25,9 +29,12 @@
     <string name="envio_standard">Envio Standard</string>
     <string name="garantia_del_envio">Garantia del Envio</string>
     <string name="FaltanCampos">Faltan Campos</string>
-    <string name="BotonAtras">Atras</string>
-    <string name="BotonAretes">Aretes</string>
-    <string name="BotonCollares">Collares</string>
-    <string name="BotonAnillos">Anillos</string>
-    <string name="BotonPulseras">Pulseras</string>
+    <string name="Reg">Registro</string>
+    <string name="InfPulseras">Pulseras</string>
+    <string name="InfAretes">Aretes</string>
+    <string name="InfCadenas">Cadenas</string>
+    <string name="InfCollares">Collares</string>
+    <string name="InfUsuario">Información de Usuario</string>
+    <string name="IniSesion">Inicio de Sesión</string>
+    <string name="IniSesioin">Inicio de Sesion</string>
 </resources>

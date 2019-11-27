@@ -16,7 +16,7 @@ public class Direccion extends AppCompatActivity {
 
     //Metodo Para ir a Inicio de Sesion
     public void Sesion(View view){
-        Intent IrSesion = new Intent(this, MainActivity.class);
+        Intent IrSesion = new Intent(this, IniciodeSesion.class);
         startActivity(IrSesion);
     }
 }
