@@ -16,7 +16,7 @@ public class PaginaPrincipal extends AppCompatActivity {
     //Metodo para Categoria
     public void Categoria(View view){
         Intent Categoria = new Intent(this,Categorias.class);
-        startActivity(botonCategoria);
+        startActivity(Categoria);
     }
 
     //Metodo para Cuenta
@@ -25,6 +25,17 @@ public class PaginaPrincipal extends AppCompatActivity {
         startActivity(Cuenta);
     }
 
+    //Metodo para compra
+    public void Compras(View view) {
+        Intent Compras = new Intent(this, Pago.class);
+        startActivity(Compras);
+    }
+
+    //Metodo para Inicio
+    public void Inicio(View view) {
+        Intent Inicio = new Intent(this, PaginaPrincipal.class);
+        startActivity(Inicio);
+    }
     /**
      *
      * Comienzan metodos de funciones con botones de inicio
