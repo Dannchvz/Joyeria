@@ -16,13 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="Cuenta"
-        android:text="@string/BotonCuenta" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="186dp"
-        android:layout_height="101dp"
-        app:srcCompat="@drawable/1f954e37-6a9f-4492-8d32-db8a15ff28de" />
+        android:text="@string/B20" />
 
     <TextView
         android:id="@+id/text_20"
@@ -36,21 +30,10 @@
         android:layout_height="wrap_content"
         android:text="TextView" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="184dp"
-        android:layout_height="101dp"
-        app:srcCompat="@drawable/2f0fe533-5671-4b4e-8a92-e4c8d7f56472" />
-
     <TextView
         android:id="@+id/text_21"
         android:layout_width="182dp"
         android:layout_height="wrap_content"
         android:text="Info" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="180dp"
-        android:layout_height="104dp"
-        app:srcCompat="@drawable/7a6cd2e7-a745-4f4f-8e6d-0b2c5258b95a" />
 </LinearLayout>

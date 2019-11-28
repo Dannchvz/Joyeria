@@ -35,7 +35,7 @@ public class Adaptar extends RecyclerView.Adapter<Adaptar.ViewHolder> {
         holder.TxtDesc.setText(lista.getDescripcion());
         holder.TxtDet.setText(lista.getDetalles());
 
-        //imagen 
+        //imagen
     }
 
     @Override
