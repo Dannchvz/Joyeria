@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    android:versionCode="1" android:versionName="1.0"
-    package="com.example.bellayelegantejoyeria">
+    package="com.example.bellayelegantejoyeria"
+    android:versionCode="1"
+    android:versionName="1.0">
 
     <application
         android:allowBackup="true"
@@ -10,9 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".SubCategorias"></activity>
-
+        <activity android:name=".PaginaPrincipal"></activity>
+        <activity android:name=".SubCategorias" />
         <activity
             android:name=".Categorias"
             android:label="@string/InfCategorias"

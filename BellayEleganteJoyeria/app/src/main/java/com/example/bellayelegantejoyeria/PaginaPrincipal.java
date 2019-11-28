@@ -16,7 +16,7 @@ public class PaginaPrincipal extends AppCompatActivity {
     //Metodo para Categoria
     public void Categoria(View view){
         Intent Categoria = new Intent(this,Categorias.class);
-        startActivity(Categoria);
+        startActivity(botonCategoria);
     }
 
     //Metodo para Cuenta

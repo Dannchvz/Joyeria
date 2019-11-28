@@ -29,7 +29,7 @@ public class TarjetaDebito extends AppCompatActivity {
         CVV = findViewById(R.id.CVV);
         campos = Arrays.asList(Nombre, NumTarjeta, Mes, Anio, CVV);
 
-        Guardar = findViewById(R.id.button5);
+        Guardar = findViewById(R.id.botonCompras);
         Guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
