@@ -11,28 +11,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".SubCategorias"></activity>
         <activity
-            android:name=".Anillos"
-            android:label="@string/InfAnillos"
-            android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true" />
-        <activity
-            android:name=".Aretes"
-            android:label="@string/InfAretes"
-            android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true" />
-        <activity
-            android:name=".Cadenas"
-            android:label="@string/InfCadenas"
-            android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true" />
-        <activity
             android:name=".Categorias"
             android:label="@string/InfCategorias"
-            android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true" />
-        <activity
-            android:name=".Collares"
-            android:label="@string/InfCollares"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true" />
         <activity
@@ -60,12 +40,6 @@
         <activity
             android:name=".Pago"
             android:label="@string/app_comf"
-            android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true" />
-        <activity android:name=".Prueba" />
-        <activity
-            android:name=".Pulseras"
-            android:label="@string/InfPulseras"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true" />
         <activity
