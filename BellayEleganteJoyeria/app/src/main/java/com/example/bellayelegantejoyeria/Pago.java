@@ -52,5 +52,5 @@ public class Pago extends AppCompatActivity {
      *
      * Finalizan metodos de funciones con botones de inicio
      */
->>>>>>> 1c2d066acb1ad14b66fae8e75a0d959280d24f0e
+
 }

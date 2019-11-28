@@ -24,7 +24,7 @@ public class IniciodeSesion extends AppCompatActivity {
     }
 
    public void Entrar(View view){
-        Intent IrCategorias = new Intent(this, Categorias.class);
+        Intent IrCategorias = new Intent(this, PaginaPrincipal.class);
         startActivity(IrCategorias);
     }
 
@@ -32,10 +32,6 @@ public class IniciodeSesion extends AppCompatActivity {
      *
      * Comienzan metodos de funciones con botones de inicio
      */
-<<<<<<< HEAD
-=======
-    }
->>>>>>> 4e27900a76948948fbff42244b63809e911ccf15
 
     @Override
     protected void onStart(){

@@ -2,6 +2,7 @@ package com.example.bellayelegantejoyeria;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,7 +15,7 @@ public class cuenta extends AppCompatActivity {
     }
 
     //Metodo para Atras
-    public void Atras(View view){
+    public void Atras( View view){
         Intent Atras = new Intent(this, PaginaPrincipal.class);
         startActivity(Atras);
     }

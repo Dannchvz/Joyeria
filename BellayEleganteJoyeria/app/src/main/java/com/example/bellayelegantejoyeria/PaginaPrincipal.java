@@ -11,7 +11,7 @@ public class PaginaPrincipal extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_paginaprincipal);
+        setContentView(R.layout.activity_pagina_principal);
     }
     //Metodo para Categoria
     public void Categoria(View view){
@@ -40,7 +40,7 @@ public class PaginaPrincipal extends AppCompatActivity {
      *
      * Comienzan metodos de funciones con botones de inicio
      */
-}
+
 
     @Override
     protected void onStart(){
