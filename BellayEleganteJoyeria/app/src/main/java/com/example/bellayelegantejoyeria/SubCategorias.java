@@ -1,17 +1,17 @@
 package com.example.bellayelegantejoyeria;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Pulseras extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class SubCategorias extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pulseras);
+        setContentView(R.layout.activity_sub_categorias);
     }
 
     //Metodo para Atras
@@ -24,11 +24,6 @@ public class Pulseras extends AppCompatActivity {
      *
      * Comienzan metodos de funciones con botones de inicio
      */
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
 
     @Override
     protected void onStart(){

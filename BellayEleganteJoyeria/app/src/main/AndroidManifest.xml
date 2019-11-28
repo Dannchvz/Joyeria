@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <!--suppress AndroidDomInspection -->
         <activity android:name=".Logo">
             <intent-filter>
@@ -31,17 +32,23 @@
             android:label="@string/InfCadenas"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true" />
+=======
+        <activity android:name=".SubCategorias"></activity>
+>>>>>>> 89e36fc3db9ef24525890017bcc8d91a32c332bd
         <activity
             android:name=".Categorias"
             android:label="@string/InfCategorias"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true" />
         <activity
+<<<<<<< HEAD
             android:name=".Collares"
             android:label="@string/InfCollares"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true" />
         <activity
+=======
+>>>>>>> 89e36fc3db9ef24525890017bcc8d91a32c332bd
             android:name=".cuenta"
             android:label="@string/InfUsuario"
             android:roundIcon="@mipmap/ic_launcher_round"
@@ -56,24 +63,53 @@
             android:label="@string/IniSesioin"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true" />
+<<<<<<< HEAD
+=======
+        <activity android:name=".Logo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+>>>>>>> 89e36fc3db9ef24525890017bcc8d91a32c332bd
         <activity
             android:name=".Pago"
             android:label="@string/app_comf"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true" />
+<<<<<<< HEAD
         <activity android:name=".Prueba" />
         <activity
             android:name=".Pulseras"
             android:label="@string/InfPulseras"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true" />
+=======
+>>>>>>> 89e36fc3db9ef24525890017bcc8d91a32c332bd
         <activity
             android:name=".Registro"
             android:label="@string/Reg"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true" />
+<<<<<<< HEAD
         <activity android:name=".MyClass" />
         <activity android:name=".MainActivity" />
+=======
+        <activity
+            android:name=".TarjetaDebito"
+            android:label="@string/InfoTarjeta"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true" />
+        <activity android:name=".MyClass" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+>>>>>>> 89e36fc3db9ef24525890017bcc8d91a32c332bd
     </application>
 
 </manifest>
