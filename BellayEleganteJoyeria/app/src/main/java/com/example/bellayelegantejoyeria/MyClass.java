@@ -28,7 +28,7 @@ public class MyClass extends AsyncTask<String, Void, String> {
     protected String doInBackground(String... params) {
         String parametro1 = params[0], parametro2 = params[1];
 
-        String login_url = "https://tudominio o ip/archivo.php";
+        String login_url = "189.189.222.130";
             try {
                 URL url = new URL(login_url);
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
@@ -57,7 +57,7 @@ public class MyClass extends AsyncTask<String, Void, String> {
                 httpURLConnection.disconnect();
                 return result;
             } catch (IOException e) {
-                e.printStackTrace();
+                e.printStackTrace();0
             }
         return null;
     }
