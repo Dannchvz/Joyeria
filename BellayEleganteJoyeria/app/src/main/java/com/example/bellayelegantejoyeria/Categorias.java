@@ -1,10 +1,10 @@
 package com.example.bellayelegantejoyeria;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Categorias extends AppCompatActivity {
 
@@ -16,34 +16,34 @@ public class Categorias extends AppCompatActivity {
 
     //Metodo para aretes
     public void Aretes(View view){
-        Intent Aretes = new Intent(this,Aretes.class);
+        Intent Aretes = new Intent(this,SubCategorias.class);
         startActivity(Aretes);
     }
     //Metodo para Collares
     public void Collares(View view){
-        Intent Collares = new Intent(this,Collares.class);
+        Intent Collares = new Intent(this,SubCategorias.class);
         startActivity(Collares);
     }
 
     //Metodo para Cadenas
     public void Cadenas(View view){
-        Intent cadenas = new Intent(this,Cadenas.class);
+        Intent cadenas = new Intent(this,SubCategorias.class);
         startActivity(cadenas);
     }
 
     //Metodo para Anillos
     public void Anillos(View view){
-        Intent Anillos = new Intent(this,Anillos.class);
+        Intent Anillos = new Intent(this,SubCategorias.class);
         startActivity(Anillos);
     }
     //Metodo para Pulseras
     public void Pulseras(View view){
-        Intent Pulseras = new Intent(this,Pulseras.class);
+        Intent Pulseras = new Intent(this,SubCategorias.class);
         startActivity(Pulseras);
     }
     //Metodo para Atras
     public void Atras(View view){
-        Intent Atras = new Intent(this, IniciodeSesion.class);
+        Intent Atras = new Intent(this, PaginaPrincipal.class);
         startActivity(Atras);
     }
 
@@ -51,11 +51,6 @@ public class Categorias extends AppCompatActivity {
      *
      * Comienzan metodos de funciones con botones de inicio
      */
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
 
     @Override
     protected void onStart(){
