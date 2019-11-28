@@ -216,48 +216,71 @@
         android:id="@+id/textoImagenCuatro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="ID"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="320dp" />
+        app:layout_constraintEnd_toStartOf="@+id/textoImagenCinco"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenCuatro" />
 
     <TextView
         android:id="@+id/textoImagenCinco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="108dp"
+        android:layout_marginRight="108dp"
         android:text="ID"
-        tools:layout_editor_absoluteX="184dp"
-        tools:layout_editor_absoluteY="320dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imagenOcho"
+        app:layout_constraintEnd_toStartOf="@+id/textoImagenSeis"
+        app:layout_constraintTop_toBottomOf="@+id/imagenCinco"
+        app:layout_constraintVertical_bias="0.246" />
 
     <TextView
         android:id="@+id/textoImagenSeis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
         android:text="ID"
-        tools:layout_editor_absoluteX="305dp"
-        tools:layout_editor_absoluteY="318dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imagenNueve"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenSeis"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textoImagenSiete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="ID"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="471dp" />
+        app:layout_constraintEnd_toStartOf="@+id/textoImagenOcho"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenSiete" />
 
     <TextView
         android:id="@+id/textoImagenOcho"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
         android:text="ID"
-        tools:layout_editor_absoluteX="193dp"
-        tools:layout_editor_absoluteY="476dp" />
+        app:layout_constraintBottom_toTopOf="@+id/butonCategorias"
+        app:layout_constraintEnd_toStartOf="@+id/textoImagenNueve"
+        app:layout_constraintTop_toBottomOf="@+id/imagenOcho"
+        app:layout_constraintVertical_bias="0.387" />
 
     <TextView
         android:id="@+id/textoImagenNueve"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
         android:text="ID"
-        tools:layout_editor_absoluteX="300dp"
-        tools:layout_editor_absoluteY="476dp" />
+        app:layout_constraintBottom_toTopOf="@+id/botonCuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenNueve"
+        app:layout_constraintVertical_bias="0.38" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
