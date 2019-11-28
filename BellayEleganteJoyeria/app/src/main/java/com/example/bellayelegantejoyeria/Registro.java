@@ -1,10 +1,10 @@
 package com.example.bellayelegantejoyeria;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Registro extends AppCompatActivity {
 
@@ -24,11 +24,6 @@ public class Registro extends AppCompatActivity {
      *
      * Comienzan metodos de funciones con botones de inicio
      */
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
 
     @Override
     protected void onStart(){

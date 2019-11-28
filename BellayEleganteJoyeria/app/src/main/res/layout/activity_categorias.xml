@@ -12,7 +12,7 @@
         android:id="@+id/scrollView"
         android:layout_width="410dp"
         android:layout_height="603dp"
-        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
@@ -36,8 +36,7 @@
                 android:layout_marginTop="16dp"
                 android:onClick="Aretes"
                 android:text="@string/B12"
-                app:layout_constraintStart_toStartOf="@id/scrollView"
-                />
+                app:layout_constraintStart_toStartOf="@id/scrollView" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -47,8 +46,7 @@
                 android:layout_marginTop="16dp"
                 android:onClick="Anillos"
                 android:text="@string/B14"
-                app:layout_constraintStart_toStartOf="@id/scrollView"
-                />
+                app:layout_constraintStart_toStartOf="@id/scrollView" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -58,8 +56,7 @@
                 android:layout_marginTop="16dp"
                 android:onClick="Collares"
                 android:text="@string/B13"
-                app:layout_constraintStart_toStartOf="@id/scrollView"
-                />
+                app:layout_constraintStart_toStartOf="@id/scrollView" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -69,8 +66,7 @@
                 android:layout_marginTop="16dp"
                 android:onClick="Cadenas"
                 android:text="@string/B16"
-                app:layout_constraintStart_toStartOf="@id/scrollView"
-                />
+                app:layout_constraintStart_toStartOf="@id/scrollView" />
 
 
             <Button
@@ -81,8 +77,8 @@
                 android:layout_marginTop="16dp"
                 android:onClick="Pulseras"
                 android:text="@string/B15"
-                app:layout_constraintStart_toStartOf="@id/scrollView"
-                />
+                app:layout_constraintStart_toStartOf="@id/scrollView" />
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
