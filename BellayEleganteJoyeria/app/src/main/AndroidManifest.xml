@@ -44,13 +44,11 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true" />
         <activity android:name=".MyClass" />
-        <activity android:name=".MainActivity" />
         <activity
             android:name=".TarjetaDebito"
             android:label="@string/InfoTarjeta"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true" />
-        <activity android:name=".MyClass" />
     </application>
 
 </manifest>
