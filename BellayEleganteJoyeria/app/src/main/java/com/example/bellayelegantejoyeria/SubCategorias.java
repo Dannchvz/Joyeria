@@ -6,12 +6,12 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Anillos extends AppCompatActivity {
+public class SubCategorias extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_anillos);
+        setContentView(R.layout.activity_sub_categorias);
     }
 
     //Metodo para Atras

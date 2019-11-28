@@ -44,4 +44,5 @@
     <string name="InfUsuario">Información de Usuario</string>
     <string name="IniSesioin">Inicio de Sesion</string>
     <string name="InfCategorias">Categorías</string>
+    <string name="title_activity_sub_categorias">SubCategorias</string>
 </resources>
