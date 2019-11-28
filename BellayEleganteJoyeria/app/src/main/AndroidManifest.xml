@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".SubCategorias"></activity>
+
         <activity
             android:name=".Categorias"
             android:label="@string/InfCategorias"
@@ -30,13 +32,6 @@
             android:label="@string/IniSesioin"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true" />
-        <activity android:name=".Logo">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".Pago"
             android:label="@string/app_comf"
@@ -47,6 +42,8 @@
             android:label="@string/Reg"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true" />
+        <activity android:name=".MyClass" />
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".TarjetaDebito"
             android:label="@string/InfoTarjeta"

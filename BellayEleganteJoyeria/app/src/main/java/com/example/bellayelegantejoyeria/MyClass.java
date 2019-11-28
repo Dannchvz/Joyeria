@@ -57,7 +57,7 @@ public class MyClass extends AsyncTask<String, Void, String> {
                 httpURLConnection.disconnect();
                 return result;
             } catch (IOException e) {
-                e.printStackTrace();
+                e.printStackTrace();0
             }
         return null;
     }

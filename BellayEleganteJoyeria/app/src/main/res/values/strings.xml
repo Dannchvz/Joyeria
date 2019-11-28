@@ -16,6 +16,9 @@
     <string name="B14">Anillos</string>
     <string name="B15">Pulseras</string>
     <string name="B16">Cadenas</string>
+    <string name="B17">Categorias</string>
+    <string name="B18">Cuenta</string>
+    <string name="B19">Bolsa</string>
     <string name="InfoTarjeta">Información de tarjeta</string>
     <string name="NumTarjeta">Numero de Tarjeta</string>
     <string name="Nombre">Nombre</string>

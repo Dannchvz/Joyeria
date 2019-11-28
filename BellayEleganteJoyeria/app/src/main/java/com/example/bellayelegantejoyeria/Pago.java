@@ -14,6 +14,8 @@ public class Pago extends AppCompatActivity {
         setContentView(R.layout.activity_pago);
     }
 
+<<<<<<< HEAD
+=======
     public void TCD (View view){
         Intent IrPagoTarjeta = new Intent(this, TarjetaDebito.class);
         startActivity(IrPagoTarjeta);
@@ -57,4 +59,5 @@ public class Pago extends AppCompatActivity {
      *
      * Finalizan metodos de funciones con botones de inicio
      */
+>>>>>>> 1c2d066acb1ad14b66fae8e75a0d959280d24f0e
 }
