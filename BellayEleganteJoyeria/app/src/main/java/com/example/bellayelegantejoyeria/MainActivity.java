@@ -1,7 +1,5 @@
 package com.example.bellayelegantejoyeria;
 
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -10,11 +8,11 @@ public class MainActivity extends AppCompatActivity {
      *
      * Comienzan metodos de funciones con botones de inicio
      */
-    @Override
+    /**@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
+    }**/
 
     @Override
     protected void onStart(){

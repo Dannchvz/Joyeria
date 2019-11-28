@@ -12,16 +12,17 @@ public class cuenta extends AppCompatActivity {
         setContentView(R.layout.activity_cuenta);
     }
 
+    //Metodo para Atras
+    /**
+    public void Atras(View view){
+        Intent Atras = new Intent(this, Inicio.class);
+        startActivity(Atras);
+    }**/
+
     /**
      *
      * Comienzan metodos de funciones con botones de inicio
      */
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-
     @Override
     protected void onStart(){
         super.onStart();
