@@ -23,7 +23,7 @@ public class Logo extends AppCompatActivity {
                 Intent IrInicio = new Intent(Logo.this, IniciodeSesion.class);
                 startActivity(IrInicio);
                 finish();
-            };
+            }
         }, DURACION_SPLASH);
     }
 }

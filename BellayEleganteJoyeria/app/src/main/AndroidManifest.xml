@@ -9,70 +9,71 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Anillos"
-            android:label="@string/InfAnillos"
-            android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true"/>
-        <activity android:name=".Aretes"
-            android:label="@string/InfAretes"
-            android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true"/>
-        <activity android:name=".Cadenas"
-            android:label="@string/InfCadenas"
-            android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true"/>
-        <activity android:name=".Categorias"
-            android:label="@string/InfCategorias"
-            android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true"/>
-        <activity android:name=".Collares"
-            android:label="@string/InfCollares"
-            android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true"/>
-        <activity android:name=".cuenta"
-            android:label="@string/InfUsuario"
-            android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true"/>
-        <activity android:name=".Direccion"
-            android:label="@string/Reg"
-            android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true"/>
-        <activity android:name=".IniciodeSesion"
-            android:label="@string/IniSesioin"
-            android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true"/>
+        <!--suppress AndroidDomInspection -->
         <activity android:name=".Logo">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".Pago"
-            android:label="@string/app_comf"
+        <activity
+            android:name=".Anillos"
+            android:label="@string/InfAnillos"
             android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true"/>
-        <activity android:name=".Prueba"/>
-        <activity android:name=".Pulseras"
-            android:label="@string/InfPulseras"
+            android:supportsRtl="true" />
+        <activity
+            android:name=".Aretes"
+            android:label="@string/InfAretes"
             android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true"/>
-        <activity android:name=".Registro"
+            android:supportsRtl="true" />
+        <activity
+            android:name=".Cadenas"
+            android:label="@string/InfCadenas"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true" />
+        <activity
+            android:name=".Categorias"
+            android:label="@string/InfCategorias"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true" />
+        <activity
+            android:name=".Collares"
+            android:label="@string/InfCollares"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true" />
+        <activity
+            android:name=".cuenta"
+            android:label="@string/InfUsuario"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true" />
+        <activity
+            android:name=".Direccion"
             android:label="@string/Reg"
             android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true"/>
-        <activity android:name=".TarjetaDebito"
-            android:label="@string/InfoTarjeta"
+            android:supportsRtl="true" />
+        <activity
+            android:name=".IniciodeSesion"
+            android:label="@string/IniSesioin"
             android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true"/>
-        <activity android:name=".MyClass"></activity>
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:supportsRtl="true" />
+        <activity
+            android:name=".Pago"
+            android:label="@string/app_comf"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true" />
+        <activity android:name=".Prueba" />
+        <activity
+            android:name=".Pulseras"
+            android:label="@string/InfPulseras"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true" />
+        <activity
+            android:name=".Registro"
+            android:label="@string/Reg"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true" />
+        <activity android:name=".MyClass" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
