@@ -13,11 +13,11 @@ public class Pago extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pago);
     }
-     /**
+
     public void TCD (View view){
-        Intent IrPagoTarjeta = new Intent(this, TarjetaDebito.class);
+        Intent IrPagoTarjeta = new Intent(this,TarjetaDebito.class);
         startActivity(IrPagoTarjeta);
-    }**/
+    }
 
     /**
      *

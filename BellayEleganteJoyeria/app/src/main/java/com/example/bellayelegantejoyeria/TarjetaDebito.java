@@ -1,14 +1,14 @@
 package com.example.bellayelegantejoyeria;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 
 import java.util.Arrays;
 import java.util.List;
@@ -29,7 +29,7 @@ public class TarjetaDebito extends AppCompatActivity {
         CVV = findViewById(R.id.CVV);
         campos = Arrays.asList(Nombre, NumTarjeta, Mes, Anio, CVV);
 
-        Guardar = findViewById(R.id.botonCompras);
+        Guardar = findViewById(R.id.button5);
         Guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,6 +68,7 @@ public class TarjetaDebito extends AppCompatActivity {
         Intent IrConF = new Intent(this, Pago.class);
         startActivity(IrConF);
     }
+
 
     /**
      *
