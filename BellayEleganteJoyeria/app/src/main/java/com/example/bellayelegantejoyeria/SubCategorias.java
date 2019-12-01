@@ -1,9 +1,8 @@
 package com.example.bellayelegantejoyeria;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
 
+import android.os.Bundle;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SubCategorias extends AppCompatActivity {
@@ -12,13 +11,11 @@ public class SubCategorias extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub_categorias);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
     }
 
-    //Metodo para Atras
-    public void Atras(View view){
-        Intent Atras = new Intent(this, Categorias.class);
-        startActivity(Atras);
-    }
 
     /**
      *

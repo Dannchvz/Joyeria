@@ -1,5 +1,6 @@
 package com.example.bellayelegantejoyeria;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
@@ -22,6 +23,10 @@ public class TarjetaDebito extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tarjeta_debito);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
         NumTarjeta = findViewById(R.id.NumTarjeta);
         Nombre = findViewById(R.id.Nombre);
         Anio = findViewById(R.id.Anio);

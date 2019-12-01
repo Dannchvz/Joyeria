@@ -30,6 +30,10 @@
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup">
 
             <RadioButton
                 android:id="@+id/radioButton"
@@ -49,6 +53,7 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginTop="0dp"
+                android:onClick="checkButton"
                 android:text="@string/paypal"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -59,6 +64,7 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginTop="0dp"
+                android:onClick="checkButton"
                 android:text="@string/deposito"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -68,8 +74,10 @@
                 android:layout_height="30dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginLeft="32dp"
+                android:onClick="checkButton"
                 android:text="@string/pago_contra_entrega"
                 app:layout_constraintStart_toStartOf="parent" />
+            </RadioGroup>
 
             <TextView
                 android:id="@+id/textView23"
@@ -83,6 +91,10 @@
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/radioButton5" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/radioGroup2">
 
             <RadioButton
                 android:id="@+id/radioButton6"
@@ -90,6 +102,7 @@
                 android:layout_height="30dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginLeft="32dp"
+                android:onClick="checkButton"
                 android:text="@string/env_o_express"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -100,9 +113,10 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginLeft="32dp"
                 android:layout_marginTop="0dp"
+                android:onClick="checkButton"
                 android:text="@string/envio_standard"
                 app:layout_constraintStart_toStartOf="parent" />
-
+            </RadioGroup>
             <Switch
                 android:id="@+id/switch1"
                 android:layout_width="170dp"

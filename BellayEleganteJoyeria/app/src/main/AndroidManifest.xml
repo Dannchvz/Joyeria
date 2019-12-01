@@ -13,19 +13,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Compras"></activity>
+        <activity android:name=".Compras" />
         <activity android:name=".PaginaPrincipal" />
-        <activity android:name=".SubCategorias" />
+        <activity
+            android:name=".SubCategorias"
+            android:parentActivityName=".Categorias">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Categorias" />
+        </activity>
         <activity
             android:name=".Categorias"
             android:label="@string/InfCategorias"
+            android:parentActivityName=".PaginaPrincipal"
             android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true" />
+            android:supportsRtl="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PaginaPrincipal" />
+        </activity>
         <activity
             android:name=".cuenta"
             android:label="@string/InfUsuario"
+            android:parentActivityName=".PaginaPrincipal"
             android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true" />
+            android:supportsRtl="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PaginaPrincipal" />
+        </activity>
         <activity
             android:name=".Direccion"
             android:label="@string/Reg"
@@ -39,8 +55,13 @@
         <activity
             android:name=".Pago"
             android:label="@string/app_comf"
+            android:parentActivityName=".PaginaPrincipal"
             android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true" />
+            android:supportsRtl="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PaginaPrincipal" />
+        </activity>
         <activity
             android:name=".Registro"
             android:label="@string/Reg"
@@ -50,8 +71,13 @@
         <activity
             android:name=".TarjetaDebito"
             android:label="@string/InfoTarjeta"
+            android:parentActivityName=".Pago"
             android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true" />
+            android:supportsRtl="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Pago" />
+        </activity>
         <activity android:name=".Logo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

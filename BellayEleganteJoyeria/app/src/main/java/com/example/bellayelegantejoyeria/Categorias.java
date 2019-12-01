@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Categorias extends AppCompatActivity {
@@ -12,6 +13,9 @@ public class Categorias extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categorias);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
     }
 
     //Metodo para aretes
@@ -41,11 +45,7 @@ public class Categorias extends AppCompatActivity {
         Intent Pulseras = new Intent(this,SubCategorias.class);
         startActivity(Pulseras);
     }
-    //Metodo para Atras
-    public void Atras(View view){
-        Intent Atras = new Intent(this, PaginaPrincipal.class);
-        startActivity(Atras);
-    }
+
 
     /**
      *
