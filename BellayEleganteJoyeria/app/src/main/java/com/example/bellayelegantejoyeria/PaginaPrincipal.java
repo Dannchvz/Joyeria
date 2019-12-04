@@ -28,7 +28,7 @@ public class PaginaPrincipal extends AppCompatActivity {
 
     //Metodo para compra
     public void Compras(View view) {
-        Intent Compras = new Intent(this, Pago.class);
+        Intent Compras = new Intent(this, Compras.class);
         startActivity(Compras);
     }
 

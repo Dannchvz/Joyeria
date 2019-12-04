@@ -13,7 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Compras" />
+        <activity android:name=".Compras"
+            android:parentActivityName=".PaginaPrincipal">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PaginaPrincipal" />
+        </activity>
         <activity android:name=".PaginaPrincipal" />
         <activity
             android:name=".SubCategorias"
@@ -55,12 +60,12 @@
         <activity
             android:name=".Pago"
             android:label="@string/app_comf"
-            android:parentActivityName=".PaginaPrincipal"
+            android:parentActivityName=".Compras"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PaginaPrincipal" />
+                android:value=".Compras" />
         </activity>
         <activity
             android:name=".Registro"

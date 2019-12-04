@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".PaginaPrincipal"
 
     android:id="@+id/menu3_buscar"
@@ -13,285 +13,382 @@
     app:showAsAction="ifRoom|collapseActionView"
     app:actionViewClass="android.support.v7.widget.SearchView">
 
-    <ImageView
-        android:id="@+id/imagenUno"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginLeft="64dp"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.161"
-        app:srcCompat="@mipmap/ic_launcher" />
+        android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/imagenDos"
-        android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/botonBusqueda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                app:layout_constraintBottom_toTopOf="@+id/imagenDos"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.253" />
+
+            <Button
+                android:id="@+id/botonCompras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Compras"
+                android:text="C"
+                app:layout_constraintBottom_toTopOf="@+id/imagenTres"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.407"
+                app:layout_constraintStart_toEndOf="@+id/botonBusqueda"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.253" />
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.236"
-        app:layout_constraintStart_toEndOf="@+id/imagenUno"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16"
-        app:srcCompat="@mipmap/ic_launcher" />
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp">
 
-    <ImageView
-        android:id="@+id/imagenTres"
-        android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imagenUno"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.161"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/imagenDos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.236"
+            app:layout_constraintStart_toEndOf="@+id/imagenUno"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.16"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/imagenTres"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.481"
+            app:layout_constraintStart_toEndOf="@+id/imagenDos"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.16"
+            app:srcCompat="@mipmap/ic_launcher" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
-        app:layout_constraintStart_toEndOf="@+id/imagenDos"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16"
-        app:srcCompat="@mipmap/ic_launcher" />
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
 
-    <Button
-        android:id="@+id/botonBusqueda"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/textoImagenUno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_marginTop="16dp"
+            android:text="ID"
+            app:layout_constraintEnd_toStartOf="@+id/textoImagenDos"
+            app:layout_constraintHorizontal_bias="0.361"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagenUno" />
+
+        <TextView
+            android:id="@+id/textoImagenDos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:text="ID"
+            app:layout_constraintBottom_toTopOf="@+id/imagenCinco"
+            app:layout_constraintEnd_toStartOf="@+id/textoImagenTres"
+            app:layout_constraintTop_toBottomOf="@+id/imagenDos"
+            app:layout_constraintVertical_bias="0.301" />
+
+        <TextView
+            android:id="@+id/textoImagenTres"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:text="ID"
+            app:layout_constraintBottom_toTopOf="@+id/imagenSeis"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagenTres"
+            app:layout_constraintVertical_bias="0.301" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="208dp"
-        android:layout_marginLeft="208dp"
-        android:text="B"
-        app:layout_constraintBottom_toTopOf="@+id/imagenDos"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.253" />
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp">
+        <ImageView
+            android:id="@+id/imagenCuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="72dp"
+            android:clickable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagenUno"
+            app:srcCompat="@mipmap/ic_launcher" />
 
-    <Button
-        android:id="@+id/botonCompras"
-        android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imagenCinco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="72dp"
+            android:clickable="true"
+            app:layout_constraintStart_toEndOf="@+id/imagenCuatro"
+            app:layout_constraintTop_toBottomOf="@+id/imagenDos"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/imagenSeis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_marginTop="72dp"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toEndOf="@+id/imagenCinco"
+            app:layout_constraintTop_toBottomOf="@+id/imagenTres"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="Compras"
-        android:text="C"
-        app:layout_constraintBottom_toTopOf="@+id/imagenTres"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
-        app:layout_constraintStart_toEndOf="@+id/botonBusqueda"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.253" />
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+        <TextView
+            android:id="@+id/textoImagenCuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_marginTop="16dp"
+            android:text="ID"
+            app:layout_constraintEnd_toStartOf="@+id/textoImagenCinco"
+            app:layout_constraintHorizontal_bias="0.391"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagenCuatro" />
 
-    <Button
-        android:id="@+id/botonInicio"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/textoImagenCinco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="108dp"
+            android:layout_marginRight="108dp"
+            android:text="ID"
+            app:layout_constraintBottom_toTopOf="@+id/imagenOcho"
+            app:layout_constraintEnd_toStartOf="@+id/textoImagenSeis"
+            app:layout_constraintTop_toBottomOf="@+id/imagenCinco"
+            app:layout_constraintVertical_bias="0.246" />
+
+        <TextView
+            android:id="@+id/textoImagenSeis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:text="ID"
+            app:layout_constraintBottom_toTopOf="@+id/imagenNueve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagenSeis"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:onClick="Inicio"
-        android:text="Inicio"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/butonCategorias"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp">
+        <ImageView
+            android:id="@+id/imagenSiete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagenCuatro"
+            app:layout_constraintVertical_bias="0.372"
+            app:srcCompat="@mipmap/ic_launcher" />
 
-    <Button
-        android:id="@+id/butonCategorias"
-        android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imagenOcho"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imagenSiete"
+            app:layout_constraintTop_toBottomOf="@+id/imagenCinco"
+            app:layout_constraintVertical_bias="0.367"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/imagenNueve"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toEndOf="@+id/imagenOcho"
+            app:layout_constraintTop_toBottomOf="@+id/imagenSeis"
+            app:layout_constraintVertical_bias="0.367"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="144dp"
-        android:layout_marginRight="144dp"
-        android:onClick="Categoria"
-        android:text="Categorias"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.947" />
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+        <TextView
+            android:id="@+id/textoImagenSiete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_marginTop="16dp"
+            android:text="ID"
+            app:layout_constraintEnd_toStartOf="@+id/textoImagenOcho"
+            app:layout_constraintHorizontal_bias="0.344"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagenSiete" />
 
-    <Button
-        android:id="@+id/botonCuenta"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/textoImagenOcho"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:text="ID"
+            app:layout_constraintBottom_toTopOf="@+id/butonCategorias"
+            app:layout_constraintEnd_toStartOf="@+id/textoImagenNueve"
+            app:layout_constraintTop_toBottomOf="@+id/imagenOcho"
+            app:layout_constraintVertical_bias="0.387" />
+
+        <TextView
+            android:id="@+id/textoImagenNueve"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:text="ID"
+            app:layout_constraintBottom_toTopOf="@+id/botonCuenta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagenNueve"
+            app:layout_constraintVertical_bias="0.38" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:onClick="Cuenta"
-        android:text="Cuenta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.621"
-        app:layout_constraintStart_toEndOf="@+id/butonCategorias" />
+        android:orientation="horizontal"
+        android:layout_marginTop="64dp">
+        <Button
+            android:id="@+id/botonInicio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="28dp"
+            android:onClick="Inicio"
+            android:text="Inicio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/butonCategorias"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imagenCuatro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginLeft="64dp"
-        android:layout_marginTop="72dp"
-        android:clickable="true"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagenUno"
-        app:srcCompat="@mipmap/ic_launcher" />
+        <Button
+            android:id="@+id/butonCategorias"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="144dp"
+            android:layout_marginRight="144dp"
+            android:onClick="Categoria"
+            android:text="Categorias"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.947" />
 
-    <ImageView
-        android:id="@+id/imagenCinco"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="72dp"
-        android:clickable="true"
-        app:layout_constraintStart_toEndOf="@+id/imagenCuatro"
-        app:layout_constraintTop_toBottomOf="@+id/imagenDos"
-        app:srcCompat="@mipmap/ic_launcher" />
+        <Button
+            android:id="@+id/botonCuenta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="28dp"
+            android:onClick="Cuenta"
+            android:text="Cuenta"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.621"
+            app:layout_constraintStart_toEndOf="@+id/butonCategorias" />
 
-    <ImageView
-        android:id="@+id/imagenSeis"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:clickable="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toEndOf="@+id/imagenCinco"
-        app:layout_constraintTop_toBottomOf="@+id/imagenTres"
-        app:srcCompat="@mipmap/ic_launcher" />
+    </LinearLayout>
+    </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imagenSiete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginLeft="64dp"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagenCuatro"
-        app:layout_constraintVertical_bias="0.372"
-        app:srcCompat="@mipmap/ic_launcher" />
-
-    <ImageView
-        android:id="@+id/imagenOcho"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imagenSiete"
-        app:layout_constraintTop_toBottomOf="@+id/imagenCinco"
-        app:layout_constraintVertical_bias="0.367"
-        app:srcCompat="@mipmap/ic_launcher" />
-
-    <ImageView
-        android:id="@+id/imagenNueve"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toEndOf="@+id/imagenOcho"
-        app:layout_constraintTop_toBottomOf="@+id/imagenSeis"
-        app:layout_constraintVertical_bias="0.367"
-        app:srcCompat="@mipmap/ic_launcher" />
-
-    <TextView
-        android:id="@+id/textoImagenUno"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="ID"
-        app:layout_constraintEnd_toStartOf="@+id/textoImagenDos"
-        app:layout_constraintHorizontal_bias="0.361"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagenUno" />
-
-    <TextView
-        android:id="@+id/textoImagenDos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="100dp"
-        android:layout_marginRight="100dp"
-        android:text="ID"
-        app:layout_constraintBottom_toTopOf="@+id/imagenCinco"
-        app:layout_constraintEnd_toStartOf="@+id/textoImagenTres"
-        app:layout_constraintTop_toBottomOf="@+id/imagenDos"
-        app:layout_constraintVertical_bias="0.301" />
-
-    <TextView
-        android:id="@+id/textoImagenTres"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="100dp"
-        android:layout_marginRight="100dp"
-        android:text="ID"
-        app:layout_constraintBottom_toTopOf="@+id/imagenSeis"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagenTres"
-        app:layout_constraintVertical_bias="0.301" />
-
-    <TextView
-        android:id="@+id/textoImagenCuatro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="ID"
-        app:layout_constraintEnd_toStartOf="@+id/textoImagenCinco"
-        app:layout_constraintHorizontal_bias="0.391"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagenCuatro" />
-
-    <TextView
-        android:id="@+id/textoImagenCinco"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="108dp"
-        android:layout_marginRight="108dp"
-        android:text="ID"
-        app:layout_constraintBottom_toTopOf="@+id/imagenOcho"
-        app:layout_constraintEnd_toStartOf="@+id/textoImagenSeis"
-        app:layout_constraintTop_toBottomOf="@+id/imagenCinco"
-        app:layout_constraintVertical_bias="0.246" />
-
-    <TextView
-        android:id="@+id/textoImagenSeis"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginRight="100dp"
-        android:text="ID"
-        app:layout_constraintBottom_toTopOf="@+id/imagenNueve"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagenSeis"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textoImagenSiete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="ID"
-        app:layout_constraintEnd_toStartOf="@+id/textoImagenOcho"
-        app:layout_constraintHorizontal_bias="0.344"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagenSiete" />
-
-    <TextView
-        android:id="@+id/textoImagenOcho"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="100dp"
-        android:layout_marginRight="100dp"
-        android:text="ID"
-        app:layout_constraintBottom_toTopOf="@+id/butonCategorias"
-        app:layout_constraintEnd_toStartOf="@+id/textoImagenNueve"
-        app:layout_constraintTop_toBottomOf="@+id/imagenOcho"
-        app:layout_constraintVertical_bias="0.387" />
-
-    <TextView
-        android:id="@+id/textoImagenNueve"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="100dp"
-        android:layout_marginRight="100dp"
-        android:text="ID"
-        app:layout_constraintBottom_toTopOf="@+id/botonCuenta"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagenNueve"
-        app:layout_constraintVertical_bias="0.38" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
