@@ -28,7 +28,7 @@
         />
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/etCalle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -54,7 +54,7 @@
                 android:layout_marginTop="16dp"
                 android:text="Numero Interior"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText9" />
+                app:layout_constraintTop_toBottomOf="@+id/etNI" />
 
             <TextView
                 android:id="@+id/textView15"
@@ -65,7 +65,7 @@
                 android:layout_marginTop="16dp"
                 android:text="Numero Exterior"
                 app:layout_constraintStart_toEndOf="@+id/textView14"
-                app:layout_constraintTop_toBottomOf="@+id/editText9" />
+                app:layout_constraintTop_toBottomOf="@+id/etNI" />
         </LinearLayout>
 
         <LinearLayout
@@ -74,7 +74,7 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/editText10"
+                android:id="@+id/etNI"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
@@ -86,7 +86,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
                 <EditText
-                    android:id="@+id/editText11"
+                    android:id="@+id/etNE"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
@@ -94,7 +94,7 @@
                     android:layout_marginTop="8dp"
                     android:ems="10"
                     android:inputType="number"
-                    app:layout_constraintStart_toEndOf="@+id/editText10"
+                    app:layout_constraintStart_toEndOf="@+id/etNI"
                     app:layout_constraintTop_toBottomOf="@+id/textView15" />
         </LinearLayout>
 
@@ -107,10 +107,10 @@
         android:layout_marginTop="16dp"
         android:text="Codigo Postal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText10" />
+        app:layout_constraintTop_toBottomOf="@+id/etNI" />
 
     <EditText
-        android:id="@+id/editText12"
+        android:id="@+id/etCP"
         android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_marginStart="32dp"
@@ -130,10 +130,10 @@
         android:layout_marginTop="16dp"
         android:text="Municipio"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText12" />
+        app:layout_constraintTop_toBottomOf="@+id/etCP" />
 
     <EditText
-        android:id="@+id/editText13"
+        android:id="@+id/etMun"
         android:layout_width="210dp"
         android:layout_height="40dp"
         android:layout_marginStart="32dp"
@@ -154,10 +154,10 @@
         android:layout_marginTop="16dp"
         android:text="Estado"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText13" />
+        app:layout_constraintTop_toBottomOf="@+id/etMun" />
 
     <EditText
-        android:id="@+id/editText14"
+        android:id="@+id/etEstado"
         android:layout_width="210dp"
         android:layout_height="40dp"
         android:layout_marginStart="32dp"
@@ -178,10 +178,10 @@
         android:layout_marginTop="16dp"
         android:text="País"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText14" />
+        app:layout_constraintTop_toBottomOf="@+id/etEstado" />
 
     <EditText
-        android:id="@+id/editText15"
+        android:id="@+id/etPais"
         android:layout_width="210dp"
         android:layout_height="40dp"
         android:layout_marginStart="32dp"
@@ -203,7 +203,7 @@
             android:onClick="Sesion"
             android:text="@string/B4"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText15" />
+            app:layout_constraintTop_toBottomOf="@+id/etPais" />
     </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -28,7 +28,7 @@
             />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/etNombre"
             android:layout_width="210dp"
             android:layout_height="40dp"
             android:layout_marginStart="28dp"
@@ -49,10 +49,10 @@
             android:layout_marginTop="16dp"
             android:text="Apellido Paterno"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText3" />
+            app:layout_constraintTop_toBottomOf="@+id/etNombre" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/etApP"
             android:layout_width="210dp"
             android:layout_height="40dp"
             android:layout_marginStart="32dp"
@@ -73,9 +73,9 @@
             android:layout_marginTop="16dp"
             android:text="Apellido Materno"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText4" />
+            app:layout_constraintTop_toBottomOf="@+id/etApP" />
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/etApM"
             android:layout_width="210dp"
             android:layout_height="40dp"
             android:layout_marginStart="32dp"
@@ -95,10 +95,10 @@
             android:layout_marginTop="16dp"
             android:text="CURP"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText5" />
+            app:layout_constraintTop_toBottomOf="@+id/etApM" />
 
         <EditText
-            android:id="@+id/editText6"
+            android:id="@+id/etCURP"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_marginStart="32dp"
@@ -119,10 +119,10 @@
             android:layout_marginTop="16dp"
             android:text="Correo"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText6" />
+            app:layout_constraintTop_toBottomOf="@+id/etCURP" />
 
         <EditText
-            android:id="@+id/editText7"
+            android:id="@+id/etCorreo"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_marginStart="32dp"
@@ -142,10 +142,10 @@
             android:layout_marginTop="16dp"
             android:text="Telefono"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText7" />
+            app:layout_constraintTop_toBottomOf="@+id/etCorreo" />
 
         <EditText
-            android:id="@+id/editText8"
+            android:id="@+id/etTelefono"
             android:layout_width="210dp"
             android:layout_height="40dp"
             android:layout_marginStart="32dp"
@@ -167,7 +167,7 @@
                 android:onClick="Direccion"
                 android:text="@string/B3"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText8" />
+                app:layout_constraintTop_toBottomOf="@+id/etTelefono" />
     </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
