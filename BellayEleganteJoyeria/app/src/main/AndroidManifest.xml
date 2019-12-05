@@ -83,7 +83,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Pago" />
         </activity>
-        <activity android:name=".Logo">
+        <activity android:name=".Logo"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

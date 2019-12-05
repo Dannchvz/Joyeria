@@ -18,7 +18,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
     <LinearLayout
@@ -39,66 +39,68 @@
             app:layout_constraintVertical_bias="0.161"
             app:srcCompat="@mipmap/ic_launcher" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/textNombre"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="32dp"
-            android:text="Nombre del producto"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.037"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-        <TextView
-            android:id="@+id/textDescripcion"
-            android:layout_width="98dp"
-            android:layout_height="25dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginLeft="32dp"
-            android:text="Descripcion"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="parent" />
-        <TextView
-            android:id="@+id/textprecio"
-            android:layout_width="98dp"
-            android:layout_height="25dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginLeft="32dp"
-            android:text="Precio"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="parent" />
-        <TextView
-            android:id="@+id/textCantidad"
-            android:layout_width="98dp"
-            android:layout_height="25dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginLeft="32dp"
-            android:text="Cantidad"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="parent" />
-        </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="32dp">
+            android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/textNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="20dp"
+                android:text="Nombre del producto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.037"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textDescripcion"
+                android:layout_width="98dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="0dp"
+                android:text="Descripcion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textprecio"
+                android:layout_width="98dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="0dp"
+                android:text="Precio"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textCantidad"
+                android:layout_width="98dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="0dp"
+                android:text="Cantidad"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
             <Button
                 android:id="@+id/btn_menos"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
@@ -106,7 +108,6 @@
                 android:layout_marginLeft="32dp"
                 android:layout_marginTop="35dp"
                 android:layout_marginBottom="31dp"
-                android:onClick="restar"
                 android:text="-"
                 android:textAllCaps="false"
                 android:textSize="20sp"
@@ -114,14 +115,13 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
-                android:id="@+id/txt_cantidad1"
-                android:layout_width="0dp"
+                android:id="@+id/txt_cantidad"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:layout_marginTop="22dp"
                 android:layout_alignTop="@+id/btn_menos"
-                android:ems="10"
                 android:inputType="number"
                 android:text="1"
                 android:textSize="20sp"
@@ -132,7 +132,7 @@
 
             <Button
                 android:id="@+id/btn_mas"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
@@ -221,8 +221,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="40dp"
-                android:layout_marginLeft="32dp">
+                android:layout_marginTop="40dp">
 
                 <Button
                     android:id="@+id/btn_menos2"
@@ -234,7 +233,6 @@
                     android:layout_marginLeft="32dp"
                     android:layout_marginTop="35dp"
                     android:layout_marginBottom="31dp"
-                    android:onClick="restar"
                     android:text="-"
                     android:textAllCaps="false"
                     android:textSize="20sp"
@@ -242,14 +240,13 @@
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <TextView
-                    android:id="@+id/txt_cantidad"
+                    android:id="@+id/txt_cantidad2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:layout_marginTop="22dp"
                     android:layout_alignTop="@+id/btn_menos"
-                    android:ems="10"
                     android:inputType="number"
                     android:text="1"
                     android:textSize="20sp"
@@ -293,17 +290,17 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.161"
                 app:srcCompat="@mipmap/ic_launcher" />
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <TextView
                     android:id="@+id/textNombre3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
                     android:layout_marginLeft="32dp"
+                    android:layout_marginTop="20dp"
                     android:text="Nombre del producto"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.037"
@@ -314,42 +311,44 @@
                     android:id="@+id/textDescripcion3"
                     android:layout_width="98dp"
                     android:layout_height="25dp"
-                    android:layout_marginTop="0dp"
                     android:layout_marginLeft="32dp"
+                    android:layout_marginTop="0dp"
                     android:text="Descripcion"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toEndOf="@+id/imageView"
                     app:layout_constraintTop_toTopOf="parent" />
+
                 <TextView
                     android:id="@+id/textprecio3"
                     android:layout_width="98dp"
                     android:layout_height="25dp"
-                    android:layout_marginTop="0dp"
                     android:layout_marginLeft="32dp"
+                    android:layout_marginTop="0dp"
                     android:text="Precio"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toEndOf="@+id/imageView"
                     app:layout_constraintTop_toTopOf="parent" />
+
                 <TextView
                     android:id="@+id/textCantidad3"
                     android:layout_width="98dp"
                     android:layout_height="25dp"
-                    android:layout_marginTop="0dp"
                     android:layout_marginLeft="32dp"
+                    android:layout_marginTop="0dp"
                     android:text="Cantidad"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toEndOf="@+id/imageView"
                     app:layout_constraintTop_toTopOf="parent" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="40dp"
-                android:layout_marginLeft="32dp">
+                android:layout_marginTop="40dp">
 
                 <Button
                     android:id="@+id/btn_menos3"
@@ -361,7 +360,6 @@
                     android:layout_marginLeft="32dp"
                     android:layout_marginTop="35dp"
                     android:layout_marginBottom="31dp"
-                    android:onClick="restar"
                     android:text="-"
                     android:textAllCaps="false"
                     android:textSize="20sp"
@@ -376,7 +374,6 @@
                     android:layout_weight="1"
                     android:layout_marginTop="22dp"
                     android:layout_alignTop="@+id/btn_menos"
-                    android:ems="10"
                     android:inputType="number"
                     android:text="1"
                     android:textSize="20sp"
@@ -393,10 +390,8 @@
                     android:layout_weight="1"
                     android:layout_alignTop="@+id/txt_cantidad"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginLeft="32dp"
                     android:layout_marginTop="35dp"
                     android:layout_marginBottom="31dp"
-                    android:onClick="agregar"
                     android:text="+"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
@@ -410,6 +405,8 @@
             android:layout_marginTop="8dp"
             android:onClick="ConfPedido"
             android:text="@string/B21" />
+
+
     </LinearLayout>
 
     </ScrollView>
