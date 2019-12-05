@@ -2,10 +2,18 @@
 
 //buscar producto
 
- include 'conexion.php';
-$codigo=$_get['correo_electronico']) $codigo2 $_get[contraseña];
+/*
+	1 Anillos
+	2 Pulsera
+	3 Collares
+	4 Aretes
+	5 Cadenas
 
-$consulta="SELECT * FROM usuario WHERE correo_electronico='$codigo' and contraseña='$codigo2'"
+*/
+ include 'conexion.php';
+$codigo=$_get['id_tipo_producto'];
+
+$consulta="SELECT * FROM producto WHERE id_tipo_producto='$codigo'"
 $resultado=$conexion->query($consulta);
 
 while($fila=$resultado -> fetch_array()){

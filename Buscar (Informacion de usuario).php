@@ -2,18 +2,10 @@
 
 //buscar producto
 
-/*
-	1 Anillos
-	2 Pulsera
-	3 Collares
-	4 Aretes
-	5 Cadenas
-
-*/
  include 'conexion.php';
-$codigo=$_get['codigo'];
+$codigo=$_get['nombre']
 
-$consulta="SELECT * FROM `producto` WHERE id_tipo_producto=''"
+$consulta="SELECT Nombre,apellido_paterno,apellido_materno,telefono FROM usuario Where nombre=$codigo  "
 $resultado=$conexion->query($consulta);
 
 while($fila=$resultado -> fetch_array()){
