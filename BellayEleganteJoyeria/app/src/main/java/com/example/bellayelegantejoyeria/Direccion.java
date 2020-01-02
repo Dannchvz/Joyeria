@@ -70,12 +70,13 @@ public class Direccion extends AppCompatActivity {
 
     //Metodo Para ir a Inicio de Sesion
     public void Sesion(View view) {
-        /*Intent IrSesion = new Intent(this, IniciodeSesion.class);
-        startActivity(IrSesion);*/
         obtener();
         new CrearUsiario(this).execute("CREAR USUARIO", MyURL.url+"InsertarUsuario.php",
                 "nom",nombre,"app",apP,"apm",apM,"cur",curp,"cor",correo,"tel",telefono,
                 "cal",calle,"ni",ni,"ne",ne,"cp",cp,"mun",mun,"est",estado,"pais",pais);
+
+        Intent IrSesion = new Intent(this, IniciodeSesion.class);
+        startActivity(IrSesion);
     }
 
     /**
